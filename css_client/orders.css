@@ -1,0 +1,422 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 0%);
+}
+
+header #header h1 {
+    color: hsl(180, 28%, 93%);
+    cursor: pointer;
+    font-size: 2em;
+}
+
+header #header h1 a {
+    color: hsl(180, 28%, 93%);
+    text-decoration: none;
+}
+
+header #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header #header #logout-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+header #header #logout-form i {
+    margin-right: 10px;
+    font-size: 1.3em;
+    transition: color 0.3s ease;
+    color: hsl(207, 100%, 64%);
+}
+
+header #header #logout-form i:hover {
+    color: hsl(207, 100%, 74%);
+}
+
+header #header #logout-form h3 {
+    margin: 0;
+    margin-right: 15px;
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 530;
+    transition: color 0.3s ease;
+    color: hsl(0, 0%, 100%);
+}
+
+header #header #logout-form h3:hover {
+    color: hsl(0, 0%, 70%);
+}
+
+header #navbar {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+}
+
+header #navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #navbar ul li {
+    list-style: none;
+    padding: 0px 15px;
+}
+
+header #navbar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: hsl(0, 0%, 55%);
+    transition: all 1s ease 0s;
+}
+
+header #navbar ul li a:hover {
+    color: hsl(180, 28%, 93%);
+}
+
+header #header .login-btn {
+    padding: 10px 25px;
+    background-color: hsl(207, 100%, 64%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: hsl(180, 15%, 94%);
+    font-size: 1.1em;
+    transition: all 0.3s ease 0s;
+}
+
+header #header .login-btn:hover {
+    background-color: hsl(207, 100%, 74%);
+}
+
+header #header .logout-btn {
+    padding: 10px 25px;
+    background-color: hsl(207, 100%, 64%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: hsl(180, 15%, 94%);
+    font-size: 1.1em;
+    transition: all 0.3s ease 0s;
+}
+
+header #header .logout-btn:hover {
+    background-color: hsl(207, 100%, 74%);
+}
+
+header #navbar input {
+    background-color:hsl(0, 0%, 25%);
+    border: none;
+    border-radius: 30px;
+    height: 30px;
+    text-align: center;
+    color: hsl(0, 5%, 92%);
+}
+
+header #navbar #in {
+    color: hsl(180, 28%, 93%);
+}
+
+@media (max-width: 768px) {
+    header #header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+    header #header h3 {
+        font-size: 1.1em;
+    }
+
+    header #header #logout-form {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header #header .login-btn,
+    header #header .logout-btn {
+        width: 70%;
+        max-width: 200px;
+        display: block;
+        font-size: 0.7em !important;
+        padding: 7px 12px !important;
+        text-align: center !important;
+    }
+
+    header #navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    header #navbar ul li {
+        padding: 5px 0;
+    }
+}
+
+/* ORDERS STYLING*/
+
+main{
+    padding: 20px;
+}
+
+.title{
+    color: #fff; margin-left: 100px;
+}
+
+#orders-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+#products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1em;
+    width: 50%;
+    align-items: flex-start;
+    margin-left: 4%;
+}
+
+.card{
+    background-color: hsl(0, 0%, 15%);
+    max-width: 35em;
+    max-height: 12em;
+    margin-top: 1em;
+    padding: 0.5em;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container{
+    text-align: center;
+    margin: 0;
+    border-radius: 15px;
+}
+
+img{
+    border-radius: 15px;
+    width: 120px;
+    height: 250px;
+    box-sizing: border-box;
+    object-fit: contain;
+    margin: 0;
+}
+
+.container{
+    width: 400px;
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container h5{
+    font-weight: 600;
+    color: #fff;
+    font-size: 1em;
+}
+
+.container h6{
+    font-weight: 400;
+    font-size: 1em;
+    color: #fff
+}
+
+.container .cancel-btn{
+    width: 50%;
+    height: 22px;
+    margin-top: 5px;
+    background-color:hsl(207, 100%, 64%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+.container .cancel-btn:hover{
+    background-color:hsl(207, 100%, 74%);
+}
+
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.cart-container .action-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+    flex: 1;
+    position: sticky;
+    padding: 50px;
+}
+
+.cart-container .action-container #notification {
+    visibility: hidden;
+    background-color: #f44336;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0px 2px 10px hsla(0, 0%, 0%, 0.1);
+}
+
+.cart-container .action-container h4{
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.cart-container .action-container p{
+    color:#fff;
+    margin-bottom: 30px;
+}
+
+.cart-container .action-container button{
+    border: none;
+    background-color: hsl(207, 100%, 64%);
+    width: 70%;
+    height: 40px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cart-container .action-container button:hover{
+    background-color: hsl(207, 100%, 74%);
+}
+
+@media screen and (max-width: 720px){
+    .title{
+        display: none;
+    }
+
+    #orders-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #orders-container #products{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #orders-container #products .card{
+        width: 15em !important;
+        margin-top: 1em !important;
+        max-height: 50em !important;
+        padding: 0.5em;
+        border: 3px solid #fff;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container{
+        width: 12em;
+        padding-top: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    
+    #orders-container #products .card .image-container{
+        max-width: 30em;
+        max-height: 10em;
+        margin: 0;
+        border-radius: 15px;
+    }
+    
+    #orders-container #products .card .image-container img{
+        border-radius: 10px;
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+        margin: 0;
+    }
+    
+    .container{
+        width: 12em;
+        padding-top: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .container h5{
+        font-weight: 600;
+        color: #fff;
+        font-size: 0.8em;
+    }
+    
+    .container h6{
+        font-weight: 400;
+        font-size: 0.8em;
+        color: #fff
+    }
+    
+    .container .cancel-btn{
+        width: 50%;
+        height: 22px;
+        margin-top: 5px;
+        text-align: center;
+        padding-top: 2.3px;
+        font-size: 0.45em;
+    }
+}
