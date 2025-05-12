@@ -117,8 +117,6 @@ if (isset($_POST['update']) && isset($_GET['edit'])) {
     </form>
 </div>
 <div id="productSection">
-
-  <!-- Add Product Form -->
   <div id="add_products">
     <div class="addP">
       <form method="post" enctype="multipart/form-data" action="products.php<?php echo $edit_mode ? '?edit=' . $edit_product['id'] : ''; ?>">
@@ -156,8 +154,6 @@ if (isset($_POST['update']) && isset($_GET['edit'])) {
       </form>
     </div>
   </div>
-
-  <!-- Products List (Moved Outside!) -->
   <div class="alter_products">
     <?php while ($row = mysqli_fetch_assoc($products)) { ?>
       <div class="product">
